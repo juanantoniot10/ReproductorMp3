@@ -29,7 +29,7 @@ public class VistaPrincipal extends JFrame {
 	protected JLabel labelImagen;
 	
 	public VistaPrincipal() {
-		setMinimumSize(new Dimension(700, 370));
+		setMinimumSize(new Dimension(900, 500));
 		setPreferredSize(new Dimension(499, 700));
 		getContentPane().setLayout(new BorderLayout(0, 0));
 		
@@ -118,7 +118,7 @@ public class VistaPrincipal extends JFrame {
 		
 		labelImagen = new JLabel("");
 		labelImagen.setMaximumSize(new Dimension(1000, 500));
-		labelImagen.setIcon(new ImageIcon("C:\\Users\\jckdaniel\\eclipse-SegundaEvaluacionComponentesGraficos\\ReproductorMp3\\img\\cd.gif"));
+		labelImagen.setIcon(null);
 		panelImagen.add(labelImagen);
 		
 		JPanel panelProgresBar = new JPanel();

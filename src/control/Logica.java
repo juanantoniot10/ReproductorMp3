@@ -1,7 +1,10 @@
 package control;
 
+import java.io.File;
+
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import javax.swing.SwingUtilities;
 
 public class Logica {
 	private ImageIcon imagenReporductor;
@@ -19,8 +22,14 @@ public class Logica {
 		return this.imagenReporductor;
 	}
 
-	public Icon getImagenReproductorPlay() {
+	public ImageIcon getImagenReproductorPlay() {
 		return new ImageIcon("img/cdPlay.gif");
 	}
-
+	public ImageIcon obtenerImagenRandom() {
+		return new ImageIcon("img/imagen_"+crearRandom(0, 4)+".gif");
+	}
+	public int crearRandom(int min,int max) {
+		int numeroAleatorio=((int)(Math.random()*((max-min)+1)))+min;
+		return numeroAleatorio;
+	}
 }
